@@ -58,9 +58,3 @@ class Weapon:
         weapons = owner.get_owned_weapons
         weapons[self.get_id()] += 1
         owner.set_owned_weapons(weapons)
-
-player = Hero(1, 0)
-print(player.get_money())
-o = Enemy(10, 5)
-o.die(player)
-print(player.get_money())
